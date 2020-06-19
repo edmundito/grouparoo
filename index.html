@@ -1,0 +1,683 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@grouparoo/core</title>
+	<meta name="description" content="Documentation for @grouparoo/core">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@grouparoo/core</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>@grouparoo/core</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#grouparoo" id="grouparoo" style="color: inherit; text-decoration: none;">
+					<h1>Grouparoo</h1>
+				</a>
+				<p><strong>Achieve Marketing Autonomy</strong></p>
+				<p>Take control of your data and your destiny with the open source customer data platform that puts marketers in charge.</p>
+				<p><img src="https://raw.githubusercontent.com/grouparoo/grouparoo/master/documents/images/grouparoo-bowtie.png" alt="Grouparoo Data Bowtie"></p>
+				<p>Learn more at <a href="https://www.grouparoo.com">www.grouparoo.com</a></p>
+				<p align="center">
+					<a aria-label="NPM version" href="https://www.npmjs.com/package/@grouparoo/core">
+						<img alt="" src="https://img.shields.io/npm/v/@grouparoo/core.svg?style=for-the-badge&labelColor=242436">
+					</a>
+					<a aria-label="Node version" href="https://www.npmjs.com/package/@grouparoo/core">
+						<img alt="" src="https://img.shields.io/node/v/@grouparoo/core.svg?style=for-the-badge&labelColor=242436">
+					</a>
+					<a aria-label="License" href="https://github.com/grouparoo/grouparoo/blob/master/LICENSE.txt">
+						<img alt="" src="https://img.shields.io/npm/l/@grouparoo/core.svg?style=for-the-badge&labelColor=242436">
+					</a>
+				</p>
+				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
+					<h1>Table of Contents</h1>
+				</a>
+				<a href="#for-grouparoo-users" id="for-grouparoo-users" style="color: inherit; text-decoration: none;">
+					<h3>For Grouparoo Users</h3>
+				</a>
+				<ul>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/deployment/getting-started.md"> 🎉 Getting Started with Grouparoo</a></li>
+					<li>🦾 Deploying Grouparoo<ul>
+							<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/deployment/heroku.md">Deploying with Heroku</a></li>
+							<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/deployment/docker.md">Deploying with Docker</a></li>
+							<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/deployment/aws-and-k8s.md">Deploying with Kubernetes and AWS</a></li>
+						</ul>
+					</li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/.github/SUPPORT.md">🩺 Support</a></li>
+				</ul>
+				<a href="#for-grouparoo-developers" id="for-grouparoo-developers" style="color: inherit; text-decoration: none;">
+					<h3>For Grouparoo Developers</h3>
+				</a>
+				<ul>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/development/getting-started.md">👩‍💻 Getting Started</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/development/databases.md">📊 Databases</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/development/tools.md">🛠 Tools</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/development/dataflow.md">🌊 Data Flow</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/development/events.md">🏹 Events</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/development/plugins.md">🤝 Plugins</a></li>
+					<li><a href="https://docs.grouparoo.com">📑 Typescript Docs</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/development/publishing.md">📚 Publishing</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/.github/SECURITY.md">👻 Security</a></li>
+				</ul>
+				<a href="#community" id="community" style="color: inherit; text-decoration: none;">
+					<h3>Community</h3>
+				</a>
+				<p>Looking for help or to connect with other Grouparoo users? <strong><a href="https://www.grouparoo.com/community">👩‍💻👨‍💻Learn more at www.grouparoo.com/community ➡️</a></strong></p>
+				<ul>
+					<li><a href="https://www.grouparoo.com/community">👷‍♀️ Contributing Guide</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/CODE_OF_CONDUCT.md">👨‍👩‍👧‍👦 Code of Conduct</a></li>
+				</ul>
+				<a href="#other-documents" id="other-documents" style="color: inherit; text-decoration: none;">
+					<h3>Other Documents</h3>
+				</a>
+				<ul>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/LICENSE.txt">👩‍⚖️ The Grouparoo License</a></li>
+					<li><a href="https://github.com/grouparoo/grouparoo/blob/master/documents/legal/attribution.md">🙏 Attribution</a></li>
+				</ul>
+				<a href="#running-a-grouparoo-application" id="running-a-grouparoo-application" style="color: inherit; text-decoration: none;">
+					<h1>Running a Grouparoo Application</h1>
+				</a>
+				<blockquote>
+					<p>This is an abbreviated version of the Grouparoo Deployment Getting Started guide. <a href="https://github.com/grouparoo/grouparoo/blob/master/documents/deployment/getting-started.md">The full version can be found here</a>.</p>
+				</blockquote>
+				<ol>
+					<li>Create a new project with a <code>package.json</code> file like the one below. Grouparoo is a <a href="https://nodejs.org/">node.js</a> project, and we use NPM to manage our dependencies. Grouparoo required the <strong>Postgres</strong> and <strong>Redis</strong> databases. On OSX, these can be installed via <a href="https://brew.sh/">Homebrew</a>.</li>
+				</ol>
+				<pre><code class="language-json">{
+  <span class="hljs-attr">&quot;author&quot;</span>: <span class="hljs-string">&quot;Grouparoo Inc &lt;hello@grouparoo.com&gt;&quot;</span>,
+  <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;my-grouparoo-project&quot;</span>,
+  <span class="hljs-attr">&quot;description&quot;</span>: <span class="hljs-string">&quot;A Grouparoo Deployment&quot;</span>,
+  <span class="hljs-attr">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.1.0&quot;</span>,
+  <span class="hljs-attr">&quot;license&quot;</span>: <span class="hljs-string">&quot;UNLICENSED&quot;</span>,
+  <span class="hljs-attr">&quot;private&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;dependencies&quot;</span>: {
+    <span class="hljs-attr">&quot;@grouparoo/core&quot;</span>: <span class="hljs-string">&quot;latest&quot;</span>,
+    <span class="hljs-attr">&quot;@grouparoo/mysql&quot;</span>: <span class="hljs-string">&quot;latest&quot;</span>,
+    <span class="hljs-attr">&quot;@grouparoo/postgres&quot;</span>: <span class="hljs-string">&quot;latest&quot;</span>,
+    <span class="hljs-attr">&quot;@grouparoo/mailchimp&quot;</span>: <span class="hljs-string">&quot;latest&quot;</span>,
+    <span class="hljs-attr">&quot;@grouparoo/csv&quot;</span>: <span class="hljs-string">&quot;latest&quot;</span>
+  },
+  <span class="hljs-attr">&quot;scripts&quot;</span>: {
+    <span class="hljs-attr">&quot;prepare&quot;</span>: <span class="hljs-string">&quot;cd node_modules/@grouparoo/core &amp;&amp; npm run prepare&quot;</span>,
+    <span class="hljs-attr">&quot;start&quot;</span>: <span class="hljs-string">&quot;cd node_modules/@grouparoo/core &amp;&amp; ./api/bin/start&quot;</span>,
+    <span class="hljs-attr">&quot;dev&quot;</span>: <span class="hljs-string">&quot;cd node_modules/@grouparoo/core &amp;&amp; ./api/bin/dev&quot;</span>
+  },
+  <span class="hljs-attr">&quot;grouparoo&quot;</span>: {
+    <span class="hljs-attr">&quot;plugins&quot;</span>: [
+      <span class="hljs-string">&quot;@grouparoo/mysql&quot;</span>,
+      <span class="hljs-string">&quot;@grouparoo/postgres&quot;</span>,
+      <span class="hljs-string">&quot;@grouparoo/mailchimp&quot;</span>,
+      <span class="hljs-string">&quot;@grouparoo/csv&quot;</span>
+    ]
+  }
+}</code></pre>
+				<p>This makes an &quot;app&quot; for Grouparoo to run. A full example can be found <a href="https://github.com/grouparoo/app-example">here</a>.</p>
+				<ol start="2">
+					<li>There are some environment variables needed by Grouparoo that need to be set by your host/docker image. In development, we can also lod these variables from a <code>.env</code> file that lives alongside your <code>package.json</code>. Create a copy of our <a href="https://github.com/grouparoo/app-example/blob/master/.env.example">example</a> <code>.env</code> file to manage your environment variables locally. You can modify the options as needed. Make this as a peer to your <code>package.json</code> file. Note: the <code>.env</code> file only works when running in <code>NODE_ENV=development</code>. On your server, you should set up these same environment variables. At minimum, you will need to set the following variables:</li>
+				</ol>
+				<pre><code class="language-shell">PORT=3000
+WEB_URL=http://localhost:3000
+WEB_SERVER=true
+SCHEDULER=true
+WORKERS=1
+REDIS_URL=&quot;redis://localhost:6379/0&quot;
+DATABASE_URL=&quot;postgresql://localhost:5432/grouparoo_development&quot;
+SERVER_TOKEN=&quot;a-random-string&quot;</code></pre>
+				<ol start="3">
+					<li><p>Run <code>npm install</code> to install dependencies. This will also run <code>npm prepare</code> which will compile the typescript application and build the web page components.</p>
+					</li>
+					<li><p>Run <code>npm start</code> to start the server and visit <code>http://localhost:3000</code> to get started. Follow the on-screen instructions to create your account and first team.</p>
+					</li>
+				</ol>
+				<p>🦘</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_actionhero_.html">&quot;actionhero&quot;</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/mappinghelper.html">Mapping<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/optionhelper.html">Option<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/statemachine.html">State<wbr>Machine</a>
+					</li>
+					<li class=" tsd-kind-namespace">
+						<a href="modules/plugin.html">plugin</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/apikey.html" class="tsd-kind-icon">Api<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/app.html" class="tsd-kind-icon">App</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/authenticatedaction.html" class="tsd-kind-icon">Authenticated<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/authenticationerror.html" class="tsd-kind-icon">Authentication<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/destination.html" class="tsd-kind-icon">Destination</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/destinationgroup.html" class="tsd-kind-icon">Destination<wbr>Group</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/destinationgroupmembership.html" class="tsd-kind-icon">Destination<wbr>Group<wbr>Membership</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/event.html" class="tsd-kind-icon">Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/eventdata.html" class="tsd-kind-icon">Event<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/events.html" class="tsd-kind-icon">Events</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/export.html" class="tsd-kind-icon">Export</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/exportimport.html" class="tsd-kind-icon">Export<wbr>Import</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/file.html" class="tsd-kind-icon">File</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/filetransport.html" class="tsd-kind-icon">File<wbr>Transport</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/filetransportlocal.html" class="tsd-kind-icon">File<wbr>Transport<wbr>Local</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/files.html" class="tsd-kind-icon">Files</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/group.html" class="tsd-kind-icon">Group</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/groupmember.html" class="tsd-kind-icon">Group<wbr>Member</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/grouprule.html" class="tsd-kind-icon">Group<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/import.html" class="tsd-kind-icon">Import</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/log.html" class="tsd-kind-icon">Log</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/loggedmodel.html" class="tsd-kind-icon">Logged<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/mapping.html" class="tsd-kind-icon">Mapping</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/option.html" class="tsd-kind-icon">Option</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/optionallyauthenticatedaction.html" class="tsd-kind-icon">Optionally<wbr>Authenticated<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/permission.html" class="tsd-kind-icon">Permission</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/plugins.html" class="tsd-kind-icon">Plugins</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/profile.html" class="tsd-kind-icon">Profile</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/profilemultipleassociationshim.html" class="tsd-kind-icon">Profile<wbr>Multiple<wbr>Association<wbr>Shim</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/profileproperty.html" class="tsd-kind-icon">Profile<wbr>Property</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/profilepropertyrule.html" class="tsd-kind-icon">Profile<wbr>Property<wbr>Rule</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/profilepropertyrulefilter.html" class="tsd-kind-icon">Profile<wbr>Property<wbr>Rule<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/retryabletask.html" class="tsd-kind-icon">Retryable<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/run.html" class="tsd-kind-icon">Run</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/schedule.html" class="tsd-kind-icon">Schedule</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/session.html" class="tsd-kind-icon">Session</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/setting.html" class="tsd-kind-icon">Setting</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/source.html" class="tsd-kind-icon">Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/team.html" class="tsd-kind-icon">Team</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/teammember.html" class="tsd-kind-icon">Team<wbr>Member</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/appoption.html" class="tsd-kind-icon">App<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/appoptionsmethod.html" class="tsd-kind-icon">App<wbr>Options<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/connectpluginappmethod.html" class="tsd-kind-icon">Connect<wbr>Plugin<wbr>App<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/connectionoption.html" class="tsd-kind-icon">Connection<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/destinationmapping.html" class="tsd-kind-icon">Destination<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/destinationmappingoptionsmethod.html" class="tsd-kind-icon">Destination<wbr>Mapping<wbr>Options<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/destinationmappingoptionsmethodresponse.html" class="tsd-kind-icon">Destination<wbr>Mapping<wbr>Options<wbr>Method<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/destinationoptionsmethod.html" class="tsd-kind-icon">Destination<wbr>Options<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/destinationoptionsmethodresponse.html" class="tsd-kind-icon">Destination<wbr>Options<wbr>Method<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/disconnectpluginappmethod.html" class="tsd-kind-icon">Disconnect<wbr>Plugin<wbr>App<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/exportprofilepluginmethod.html" class="tsd-kind-icon">Export<wbr>Profile<wbr>Plugin<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/exportprofileproperties.html" class="tsd-kind-icon">Export<wbr>Profile<wbr>Properties</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/grouprulewithkey.html" class="tsd-kind-icon">Group<wbr>Rule<wbr>With<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/grouparooplugin.html" class="tsd-kind-icon">Grouparoo<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/importdata.html" class="tsd-kind-icon">Import<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/importprofileproperties.html" class="tsd-kind-icon">Import<wbr>Profile<wbr>Properties</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/nextfilterpluginmethod.html" class="tsd-kind-icon">Next<wbr>Filter<wbr>Plugin<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pluginapp.html" class="tsd-kind-icon">Plugin<wbr>App</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pluginconnection.html" class="tsd-kind-icon">Plugin<wbr>Connection</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pluginconnectionprofilepropertyruleoption.html" class="tsd-kind-icon">Plugin<wbr>Connection<wbr>Profile<wbr>Property<wbr>Rule<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/pluginconnectionscheduleoption.html" class="tsd-kind-icon">Plugin<wbr>Connection<wbr>Schedule<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/profilepropertypluginmethod.html" class="tsd-kind-icon">Profile<wbr>Property<wbr>Plugin<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/profilepropertyrulefilterswithkey.html" class="tsd-kind-icon">Profile<wbr>Property<wbr>Rule<wbr>Filters<wbr>With<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/profilepropertyrulescache.html" class="tsd-kind-icon">Profile<wbr>Property<wbr>Rules<wbr>Cache</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/profilespluginmethod.html" class="tsd-kind-icon">Profiles<wbr>Plugin<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/profilespluginmethodresponse.html" class="tsd-kind-icon">Profiles<wbr>Plugin<wbr>Method<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/runfilter.html" class="tsd-kind-icon">Run<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sessiondata.html" class="tsd-kind-icon">Session<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/simpleappoptions.html" class="tsd-kind-icon">Simple<wbr>App<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/simpledestinationgroupmembership.html" class="tsd-kind-icon">Simple<wbr>Destination<wbr>Group<wbr>Membership</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/simpledestinationoptions.html" class="tsd-kind-icon">Simple<wbr>Destination<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/simpleprofilepropertyruleoptions.html" class="tsd-kind-icon">Simple<wbr>Profile<wbr>Property<wbr>Rule<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/simplescheduleoptions.html" class="tsd-kind-icon">Simple<wbr>Schedule<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/simplesourceoptions.html" class="tsd-kind-icon">Simple<wbr>Source<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourcefiltermethod.html" class="tsd-kind-icon">Source<wbr>Filter<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourcefiltermethodresponserow.html" class="tsd-kind-icon">Source<wbr>Filter<wbr>Method<wbr>Response<wbr>Row</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourcemapping.html" class="tsd-kind-icon">Source<wbr>Mapping</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourceoptionsmethod.html" class="tsd-kind-icon">Source<wbr>Options<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourceoptionsmethodresponse.html" class="tsd-kind-icon">Source<wbr>Options<wbr>Method<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourcepreviewmethod.html" class="tsd-kind-icon">Source<wbr>Preview<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/sourcepreviewmethodresponserow.html" class="tsd-kind-icon">Source<wbr>Preview<wbr>Method<wbr>Response<wbr>Row</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/testpluginmethod.html" class="tsd-kind-icon">Test<wbr>Plugin<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/uniqueprofilepropertyrulebootstrapoptions.html" class="tsd-kind-icon">Unique<wbr>Profile<wbr>Property<wbr>Rule<wbr>Bootstrap<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#profilepropertypluginmethodresponse" class="tsd-kind-icon">Profile<wbr>Property<wbr>Plugin<wbr>Method<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#cache_ttl" class="tsd-kind-icon">CACHE_<wbr>TTL</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#default_mime_type" class="tsd-kind-icon">DEFAULT_<wbr>MIME_<wbr>TYPE</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#group_rule_limit" class="tsd-kind-icon">GROUP_<wbr>RULE_<wbr>LIMIT</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#lock_duration_ms" class="tsd-kind-icon">LOCK_<wbr>DURATION_<wbr>MS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#max_attempts" class="tsd-kind-icon">MAX_<wbr>ATTEMPTS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#retry_sleep" class="tsd-kind-icon">RETRY_<wbr>SLEEP</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#state_transitions" class="tsd-kind-icon">STATE_<wbr>TRANSITIONS</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#types" class="tsd-kind-icon">TYPES</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_boolean_ops" class="tsd-kind-icon">_boolean_<wbr>ops</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_date_ops" class="tsd-kind-icon">_date_<wbr>ops</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_number_ops" class="tsd-kind-icon">_number_<wbr>ops</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#_string_ops" class="tsd-kind-icon">_string_<wbr>ops</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#databasebasename" class="tsd-kind-icon">database<wbr>Base<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#db" class="tsd-kind-icon">db</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#env" class="tsd-kind-icon">env</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#eventprofilepropertyruleoptions" class="tsd-kind-icon">event<wbr>Profile<wbr>Property<wbr>Rule<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#fs" class="tsd-kind-icon">fs</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#grouparoomonorepoapp" class="tsd-kind-icon">grouparoo<wbr>Monorepo<wbr>App</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#host" class="tsd-kind-icon">host</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#localnodemodulespath" class="tsd-kind-icon">local<wbr>Node<wbr>Modules<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#maxbackoff" class="tsd-kind-icon">max<wbr>Backoff</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#models" class="tsd-kind-icon">models</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#numbers" class="tsd-kind-icon">numbers</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#os" class="tsd-kind-icon">os</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#parentplugins" class="tsd-kind-icon">parent<wbr>Plugins</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#password" class="tsd-kind-icon">password</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#path" class="tsd-kind-icon">path</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#pluginmanifest" class="tsd-kind-icon">plugin<wbr>Manifest</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#plugins" class="tsd-kind-icon">plugins</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#port" class="tsd-kind-icon">port</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#addeventsapp" class="tsd-kind-icon">add<wbr>Events<wbr>App</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#buildconsolelogger" class="tsd-kind-icon">build<wbr>Console<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#buildfilelogger" class="tsd-kind-icon">build<wbr>File<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#eventprofileproperty" class="tsd-kind-icon">event<wbr>Profile<wbr>Property</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#eventprofilepropertyruleoptionoptions" class="tsd-kind-icon">event<wbr>Profile<wbr>Property<wbr>Rule<wbr>Option<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#eventsourcefilters" class="tsd-kind-icon">event<wbr>Source<wbr>Filters</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#eventsourceoptions" class="tsd-kind-icon">event<wbr>Source<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#eventsourcepreview" class="tsd-kind-icon">event<wbr>Source<wbr>Preview</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getparentpath" class="tsd-kind-icon">get<wbr>Parent<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getpluginmanifest" class="tsd-kind-icon">get<wbr>Plugin<wbr>Manifest</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#groupexporttocsv" class="tsd-kind-icon">group<wbr>Export<wbr>ToCSV</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#internalrun" class="tsd-kind-icon">internal<wbr>Run</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#main" class="tsd-kind-icon">main</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#modelname" class="tsd-kind-icon">model<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#profilepropertyrulejstosqltype" class="tsd-kind-icon">profile<wbr>Property<wbr>RuleJSToSQLType</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#randombytesasync" class="tsd-kind-icon">random<wbr>Bytes<wbr>Async</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#readpackagejson" class="tsd-kind-icon">read<wbr>Package<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#runningcoredirectly" class="tsd-kind-icon">running<wbr>Core<wbr>Directly</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#sleep" class="tsd-kind-icon">sleep</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#stringifyextramessagepropertiesforconsole" class="tsd-kind-icon">stringify<wbr>Extra<wbr>Message<wbr>Properties<wbr>For<wbr>Console</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#validatemustachevariables" class="tsd-kind-icon">validate<wbr>Mustache<wbr>Variables</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#waitforlock" class="tsd-kind-icon">wait<wbr>For<wbr>Lock</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#cache" class="tsd-kind-icon">CACHE</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#default" class="tsd-kind-icon">DEFAULT</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#profile_property_rule_ops" class="tsd-kind-icon">PROFILE_<wbr>PROPERTY_<wbr>RULE_<wbr>OPS</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#authenticatedactionmiddleware" class="tsd-kind-icon">authenticated<wbr>Action<wbr>Middleware</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#modelchatroommiddleware" class="tsd-kind-icon">model<wbr>Chat<wbr>Room<wbr>Middleware</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#optionallyauthenticatedactionmiddleware" class="tsd-kind-icon">optionally<wbr>Authenticated<wbr>Action<wbr>Middleware</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#production" class="tsd-kind-icon">production</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#test" class="tsd-kind-icon">test</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
